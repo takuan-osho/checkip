@@ -12,7 +12,7 @@
 	},
 	"routes": [
 		{
-			"pattern": "checkip.programarch.com/*",
+			"pattern": "checkip.programarch.com",
 			"custom_domain": true
 		}
 	]
