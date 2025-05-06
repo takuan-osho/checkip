@@ -13,7 +13,7 @@ An IP address information service built with [Hono](https://hono.dev/) and deplo
 ### Prerequisites
 
 - Node.js & npm
-- A Cloudflare account
+- A Cloudflare account (required for deployment on Cloudflare Workers)
 
 ### Setup
 
