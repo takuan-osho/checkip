@@ -1,47 +1,31 @@
 # CheckIP
 
-A Cloudflare Workers application that provides IP address information services.
-
-## Overview
-
-CheckIP is built using [Hono](https://hono.dev/) framework and deployed on Cloudflare Workers. It allows you to check and analyze IP address information.
+An IP address information service built with [Hono](https://hono.dev/) and deployed on Cloudflare Workers.
 
 ## Features
 
 - IP address detection
-- Cloudflare-powered edge deployment
-- Type-safe development with TypeScript
+- Deployed globally via Cloudflare Workers
+- Built with TypeScript
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js
-- npm
-- A Cloudflare account
+- Node.js & npm
+- A Cloudflare account (required for deployment on Cloudflare Workers)
 
-### Installation
+### Setup
 
-Install all dependencies:
+1.  **Install & Run Locally:**
 
-```txt
+```bash
 npm install
 npm run dev
 ```
 
-```txt
+2.  **Deploy:**
+
+```bash
 npm run deploy
-```
-
-[For generating/synchronizing types based on your Worker configuration run](https://developers.cloudflare.com/workers/wrangler/commands/#types):
-
-```txt
-npm run cf-typegen
-```
-
-Pass the `CloudflareBindings` as generics when instantiation `Hono`:
-
-```ts
-// src/index.ts
-const app = new Hono<{ Bindings: CloudflareBindings }>()
 ```
